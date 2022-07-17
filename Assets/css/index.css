@@ -12,3 +12,14 @@ body {
     height: 100%;
     margin-top: 20px;
 }
+.images{
+    display: flex;
+    margin:auto;
+    width:110%;
+    justify-content: space-between;
+}
+img{
+    display: flex;
+    width:20%;
+    border: 2px dotted floralwhite;
+}
