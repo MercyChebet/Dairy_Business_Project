@@ -40,3 +40,16 @@ p {
    form {
     display: flex;
    }
+   footer{
+    border-top: 0px solid black;
+    text-align: center;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    background-color: grey;
+
+}
+.btn{
+    color:white;
+    background-color: blue;
+    padding: 10px;
+}
