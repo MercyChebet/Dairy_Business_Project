@@ -79,72 +79,10 @@ function reportSummary(){
     document.getElementById("output-D").innerHTML += "<hr>"
 
     document.getElementById("output-D").innerHTML += "<Br>"
+    
+    function resetPage(){
 
-
-    // Optional section
-    newDailyIncome = sumData * 49.60;
-
-    newIncomeJanuary = newDailyIncome * 31;
-    newIncomeFebruary = newDailyIncome * 29;
-    newIncomeMarch = newDailyIncome * 31;
-    newIncomeApril = newDailyIncome * 30;
-    newIncomeMay = newDailyIncome * 31;
-    newIncomeJune = newDailyIncome * 30;
-    newIncomeJuly = newDailyIncome * 31;
-    newIncomeAugust = newDailyIncome * 31;
-    newIncomeSeptember = newDailyIncome * 30;
-    newIncomeOctober = newDailyIncome * 31;
-    newIncomeNovember = newDailyIncome * 30;
-    newIncomeDecember = newDailyIncome * 31;
-
-    newIncomeInLeapYear = 366 * 49.60;
-
-    incomeJanuaryDifference = newIncomeJanuary - incomeJanuary;
-    incomeFebruaryDifference = newIncomeFebruary - incomeFebruary;
-    incomeMarchDifference = newIncomeMarch - incomeMarch;
-    incomeAprilDifference = newIncomeApril - incomeApril;
-    incomeMayDifference = newIncomeMay - incomeMay;
-    incomeJuneDifference = newIncomeJune - incomeJune;
-    incomeJulyDifference = newIncomeJuly - incomeJuly;
-    incomeAugustDifference = newIncomeAugust - incomeAugust;
-    incomeSeptemberDifference = newIncomeSeptember - incomeSeptember;
-    incomeOctoberDifference = newIncomeOctober - incomeOctober;
-    incomeNovemberDifference = newIncomeNovember - incomeNovember;
-    incomeDecemberDifference = newIncomeDecember - incomeDecember;
-
-
-    document.getElementById("output-D").innerHTML += "<h3> Comparison and difference in income per month for different prices </h3>";
-
-    document.getElementById("output-D").innerHTML += "<p>January: At price = Ksh. 45, you earn: Ksh. " + incomeJanuary + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeJanuary) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeJanuaryDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>February: At price = Ksh. 45, you earn: Ksh. " + incomeFebruary + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeFebruary) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeFebruaryDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>March: At price = Ksh. 45, you earn: Ksh. " + incomeMarch + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeMarch) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeMarchDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>April: At price = Ksh. 45, you earn: Ksh. " + incomeApril + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeApril) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeAprilDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>May: At price = Ksh. 45, you earn: Ksh. " + incomeMay + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeMay) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeMayDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>June: At price = Ksh. 45, you earn: Ksh. " + incomeJune + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeJune) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeJuneDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>July: At price = Ksh. 45, you earn: Ksh. " + incomeJuly + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeJuly) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeJulyDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>August: At price = Ksh. 45, you earn: Ksh. " + incomeAugust + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeAugust) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeAugustDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>September: At price = Ksh. 45, you earn: Ksh. " + incomeSeptember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeSeptember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeSeptemberDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>October: At price = Ksh. 45, you earn: Ksh. " + incomeOctober + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeOctober) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeOctoberDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>November: At price = Ksh. 45, you earn: Ksh. " + incomeNovember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeNovember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeNovemberDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "\n"
-    document.getElementById("output-D").innerHTML += "<p>December: At price = Ksh. 45, you earn: Ksh. " + incomeDecember + ". At price = 49.60, you earn Ksh. " + Math.round(newIncomeDecember) + ". The difference, rounded off to the nearest value, is Ksh. " + Math.round(incomeDecemberDifference) + ".</p>";
-    document.getElementById("output-D").innerHTML += "<Br>"  
+        document.getElementById("outputData").remove("innerHTML");
+        location.reload();
 }
-
-
-function resetPage(){
-
-    document.getElementById("output-D").remove("innerHTML");
-    location.reload();
-
 }
