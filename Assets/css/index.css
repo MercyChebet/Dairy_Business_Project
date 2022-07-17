@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color:white;
+    background-color: bisque;
 }
 .dashboard {
     width: 80%;
@@ -27,13 +27,17 @@ h1 {
     text-align: center;
    margin-top: 2px;
    font-family: sans-serif;
-   color: blue;
+   color: hotpink;
    
    }
 p {
      border-top: 1px solid black;
      font-family: sans-serif;
      color: black;
+}
+    #bio {
+        align-items: center;
+    }
      
        }
    footer{
@@ -46,7 +50,7 @@ p {
 }
 .btn{
     color:white;
-    background-color: blue;
+    background-color: lightcoral ;
     padding: 10px;
 }
 #input {
