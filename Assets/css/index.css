@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: bisque;
+    background-color: lightcyan;
 }
 .dashboard {
     width: 80%;
@@ -27,7 +27,7 @@ h1 {
     text-align: center;
    margin-top: 2px;
    font-family: sans-serif;
-   color: hotpink;
+   color: darkblue;
    
    }
 p {
@@ -41,7 +41,7 @@ p {
     
 .btn{
     color:white;
-    background-color: lightcoral ;
+    background-color: blue ;
     padding: 10px;
     display: flex;
     flex-direction: left;

@@ -1,11 +1,12 @@
-const shedA = 510;
-const shedB = 308;
-const shedC = 486;
-const shedD = 572;
-
+let shedA = 510;
+let shedB = 308;
+let shedC = 486;
+let shedD = 572;
 let totalProduction = shedA + shedB + shedC + shedD;
 let selling_price = totalProduction * 45;
 let time = 7;
+
+console.log(totalProduction);
 
 
 
