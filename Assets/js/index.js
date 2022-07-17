@@ -16,4 +16,10 @@ function chebet() {  for (var i = 0; i < items.length; i++) {
 document.getElementById("input").innerHTML = no; 
 document.getElementById("milk").innerHTML = "Productions"; 
 } 
+var totalLitres = 0;
+function totalCapacity(){
+for(var i = 0; i < items.length; i++)
+{
+    totalLitres = totalLitres + items[i];
+}
   
