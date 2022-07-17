@@ -5,42 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="Assets/js/index.js"></script>
     <link rel="stylesheet" href="Assets/css/index.css">
 </head>
 <body>
-    <div class="dashbaord">
-        <h1> CHEBET DAIRIES</h1>
-        <p id="bio"> Chebet dairies in Kenya is one of the most reliable and significant dairy farm. It serves not only the local residerent but the entire nation</p>
+    <section>
+
+        <h2 id="title">Chebet Dairies</h2>
         <div class="images">
+            <img src="Assets/images/image6.jpg">
+            <img src="Assets/images/image4.jpg">
+            <img src="Assets/images/image5.jpg">
             
-            <img src="Assets/images/image1.jpeg">
-            <img src="Assets/images/image2.jpeg">
-            
+
         </div>
-        <h3 id="milk">Fillin the production form below;</h3>
-<form>
-    Shed A (in litres):<input type="number" name="shed" value="" /><br>
-    Shed B (in litres):<input type="number" name="shed" value="" /><br>
-    Shed C (in litres):<input type="number" name="shed" value="" /><br>
-    Shed D (in litres):<input type="number" name="shed" value="" /><br>
-       <button type="button" name="button" onclick="chebet()" class = "btn">
-        Report Summary
-    </button>
-    <br> 
-      
-    <p id="input">
-        <button class="btn" id = "daily"> Daily income </button>
-     
-        <p><button class="btn"  id = "weekly"> Weekly income </button></p>
+
+        <div class="Output">
+            
+            <div class="productionData">
+                
+                <form action="submit" onsubmit="produceReport();">
+                    <h3>Fill the form to obtain your periodical income</h3> 
+                    <div id="sheds">
+                        <label for="shed_A">Shed_A: Milk (Litres)</label>
+                        <input id="shed_A" type="number" min="0" required>
+                    </div>
+            
+                    <div id="sheds">
+                        <label for="shed_B">Shed_B: Milk (Litres)</label>
+                        <input id="shed_B" type="number" min="0" required>
+                    </div>
+            
+                    <div id="sheds">
+                        <label for="shed_C">Shed_C: Milk (Litres)</label>
+                        <input id="shed_C" type="number" min="0" required>
+                    </div>
+            
+                    <div id="sheds">
+                        <label for="shed_D">Shed_D: Milk (Litres)</label>
+                        <input id="shed_D" type="number" min="0" required>
+                    </div>
+            
+                    <button type="submit">Submit</button>
+                    <button id="reset" type="reset" onclick="resetPage();">Reset</button>
+                    
+                </form>
+            </div>
+            
+            <div class="display">
+                <h3 id="displayTitle">Income Summary</h3>
+                <hr>
+                <p id="outputData"></p>
+
+            </div>
+        </div>
+    
+        
+    </section>
    
-       <p> <button class="btn" id = "monthly" > Monthly income </button></p>
-   
-        <button class="btn"  id = "yearly"> Yearly income </button>
-    </p>
-   
-   </form>
-   
-       </div>
-   </body>
-   </html>
+    
+    <script src="Assets/js/index.js"></script>
+
+</body>
+</html>
