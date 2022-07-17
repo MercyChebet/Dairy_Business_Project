@@ -3,7 +3,9 @@ const shedB = 308;
 const shedC = 486;
 const shedD = 572;
 
-let totalProduce = 0;
+let totalProduction = shedA + shedB + shedC + shedD;
+let selling_price = totalProduction * 45;
+let time = 7;
 
 
 
@@ -48,18 +50,23 @@ dailyIncome = totalCapacity() * 45;
     document.getElementById('monthly')= 'Your income for ' + mon[i] +  ' is  Ksh' + sum;
 }
 function promptDailyIncome() {
-    var userIncome = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed A is" + " " + userInput + " litres");
+    var userIncome = prompt("Please provide amount of income in ksh");
+    alert("Your weekly income is " + " " + userIncome + " dollars");
 };
 function promptWeeklyIncome() {
-    var userIncome = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed B is" + " " + userInput + " litres");
+    var userIncome = prompt("Please provide amount of income in ksh");
+    alert("Your weekly income is" + " " + userIncome + " dollars");
 };
-function promptMOnthlyIncome() {
-    var userInput = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed C is" + " " + userInput + " litres");
+function promptMonthlyIncome() {
+    var userInput = prompt("Please provide amount of income in ksh");
+    alert("Your monthly income is" + " " + userIncome + " dollars");
 };
 function YearlyIncome() {
-    var userIncome = prompt("Please provide amount of milk in litres");
-    alert("Your production for shed D is" + " " + userInput + " litres");
+    var userIncome = prompt("Please provide amount of income in ksh");
+    alert("Your yealry income is" + " " + userIncone + " dollars");
 };
+var incomeOverTime = function (selling_price, time) {
+    console.log("Your weekly income is Ksh. " + (selling_price * time));
+    console.log("Your yearly income is Ksh. " + (selling_price * (time * 52)));
+}
+incomeOverTime(selling_price, time);
