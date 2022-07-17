@@ -47,3 +47,19 @@ dailyIncome = totalCapacity() * 45;
     var sum = dayOfMonth[i] *dailyIncome;
     document.getElementById('monthly')= 'Your income for ' + mon[i] +  ' is  Ksh' + sum;
 }
+function promptDailyIncome() {
+    var userIncome = prompt("Please provide amount of milk in litres");
+    alert("Your production for shed A is" + " " + userInput + " litres");
+};
+function promptWeeklyIncome() {
+    var userIncome = prompt("Please provide amount of milk in litres");
+    alert("Your production for shed B is" + " " + userInput + " litres");
+};
+function promptMOnthlyIncome() {
+    var userInput = prompt("Please provide amount of milk in litres");
+    alert("Your production for shed C is" + " " + userInput + " litres");
+};
+function YearlyIncome() {
+    var userIncome = prompt("Please provide amount of milk in litres");
+    alert("Your production for shed D is" + " " + userInput + " litres");
+};

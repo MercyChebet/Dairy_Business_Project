@@ -38,20 +38,13 @@ p {
     #bio {
         align-items: center;
     }
-     
-       }
-   footer{
-    border-top: 0px solid black;
-    text-align: center;
-    padding-bottom: 5px;
-    box-sizing: border-box;
-    background-color: grey;
-
-}
+    
 .btn{
     color:white;
     background-color: lightcoral ;
     padding: 10px;
+    display: flex;
+    flex-direction: left;
 }
 #input {
     display: flex;
