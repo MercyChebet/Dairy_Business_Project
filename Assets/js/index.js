@@ -29,3 +29,12 @@ var rate = 45;
 dailyIncome = totalCapacity() * 45;
   weeklyIncome = dailyIncome * 7;
   yearlyIncome = dailyIncome * 366;
+  function dayAdd(){
+    console.log(dailyIncome);
+  }
+  function weekAdd(){
+    console.log(weeklyIncome);
+  }
+  function yearAdd(){
+    console.log(yearlyIncome);
+  }
