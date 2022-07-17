@@ -13,7 +13,7 @@ function chebet() {  for (var i = 0; i < items.length; i++) {
     var a = items[i]; 
     no = no +  a.value + " " +"<br>"; 
 } 
-document.getElementById("res").innerHTML = no; 
+document.getElementById("input").innerHTML = no; 
 document.getElementById("milk").innerHTML = "Productions"; 
 } 
   
